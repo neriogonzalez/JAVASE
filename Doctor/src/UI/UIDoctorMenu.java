@@ -50,6 +50,7 @@ public class UIDoctorMenu {
                 String date = sc.nextLine();
 
                 System.out.println("Your Date is: " + date + "\n1.-Correct. \n2.-Change date");
+                //hasta aquí
 
             }else  if (response ==0) {
                 ShowDoctorMenu();

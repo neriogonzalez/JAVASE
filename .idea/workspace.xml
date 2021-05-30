@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7a3f53e-7c7a-42b8-88fb-78ff04364821" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Doctor/src/UI/UIDoctorMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doctor/src/UI/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/src/UI/UIMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/src/UI/UIDoctorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/src/UI/UIDoctorMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="36127848-9eaa-46e7-900a-b3d88cdae313" />
+        <option name="url" value="https://github.com/neriogonzalez/JAVASE.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="1tGAhX3VzziIpUZKNQMW2QAjjNB" />
   <component name="ProjectLevelVcsManager">
