@@ -72,7 +72,7 @@ public class UIMenu {
         }while (response !=0);
     }
     private static void authUser(int userType){
-        //userType = 1  Doctor
+        //userType = 1 Doctor
         //UserType = 2 Patient
 
         ArrayList<Doctor> doctors = new ArrayList<>();
@@ -97,7 +97,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Obtener los datos del usuario
                         doctorLogged = d;
-                        //ShowDoctorMenu();
+                        UIDoctorMenu.ShowDoctorMenu();
                     }
                 }
 

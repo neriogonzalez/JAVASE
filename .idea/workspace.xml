@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7a3f53e-7c7a-42b8-88fb-78ff04364821" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Doctor/src/UI/UIDoctorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/src/UI/UIDoctorMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/src/UI/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/src/UI/UIMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="= &lt;neriogonzalez@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -78,9 +85,19 @@
       <option name="presentableId" value="Default" />
       <updated>1622385172835</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit de prueba desde IJ">
+      <created>1622393065324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622393065324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit de prueba desde IJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit de prueba desde IJ" />
   </component>
 </project>

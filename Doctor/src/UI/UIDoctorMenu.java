@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class UIDoctorMenu {
     public static void ShowDoctorMenu(){
-        int response = 0;
+        int response ;
         do {
             System.out.println("\n\n");
             System.out.println("Doctor");
-            System.out.println("Wellcome Doctor: "+UIMenu.doctorLogged.getName());
+            System.out.println("Welcome Doctor: "+UIMenu.doctorLogged.getName());
             System.out.println("1.-Add available appointment");
             System.out.println("2.-My scheduled appointmets");
             System.out.println("0.-Logout");
@@ -18,6 +18,7 @@ public class UIDoctorMenu {
 
             switch (response) {
                 case 1:
+                    showAvailableAppointmentsMenu();
                     break;
                 case 2:
                     break;
@@ -28,7 +29,7 @@ public class UIDoctorMenu {
         }while(response!=0);
     }
     private static void showAvailableAppointmentsMenu(){
-        int response = 0;
+        int response;
         do {
             System.out.println("\n\n");
             System.out.println("::Add Available Appointments");
