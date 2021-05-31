@@ -1,4 +1,5 @@
 package UI;
+//package Model;
 
 import Model.*;
 
@@ -7,10 +8,12 @@ import java.util.Scanner;
 
 public class UIMenu {
 
-    public static final String[] MONTHS = {"Enero","Febrero","Marzo","Abril","Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre","Noviembre", "Diciembre"};
+    public static final String[] MONTHS = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+            "Septiembre", "Octubre", "Noviembre", "Diciembre" };
     public static Doctor doctorLogged;
     public static Patient patientLogged;
-    public static void ShowMenu(){
+
+    public static void ShowMenu() {
         System.out.println("Welcome to appointments");
         System.out.println("Seleccione la opción que desea: ");
         int response = 0;
@@ -24,7 +27,7 @@ public class UIMenu {
 
             switch (response) {
                 case 1:
-                    response=0;
+                    response = 0;
                     System.out.println("Doctor");
                     authUser(1);
                     break;
@@ -39,9 +42,10 @@ public class UIMenu {
                 default:
                     System.out.println("Seleccione una opción válida");
             }
-        }while (response !=0);
+        } while (response != 0);
     }
-    public static void ShowPatientMenu(){
+
+    public static void ShowPatientMenu() {
         System.out.println("\n\n");
         System.out.println("Model.Patient Menu");
         int response = 0;
@@ -57,7 +61,7 @@ public class UIMenu {
                 case 1:
                     System.out.println("::Book appointment");
                     for (int i = 1; i < 4; i++) {
-                        System.out.println(i+".-" + MONTHS[i]);
+                        System.out.println(i + ".-" + MONTHS[i]);
                     }
                     break;
                 case 2:
@@ -69,11 +73,12 @@ public class UIMenu {
                     break;
 
             }
-        }while (response !=0);
+        } while (response != 0);
     }
-    private static void authUser(int userType){
-        //userType = 1 Doctor
-        //UserType = 2 Patient
+
+    private static void authUser(int userType) {
+        // userType = 1 Doctor
+        // UserType = 2 Patient
 
         ArrayList<Doctor> doctors = new ArrayList<>();
         doctors.add(new Doctor("Doctor 1", "doctor1@gmail.com"));
@@ -91,28 +96,27 @@ public class UIMenu {
             System.out.println("Inserta el email");
             Scanner sc = new Scanner(System.in);
             String email = sc.nextLine();
-            if(userType == 1){
-                for (Doctor d: doctors) {
-                    if (d.getEmail().equals(email)){
+            if (userType == 1) {
+                for (Doctor d : doctors) {
+                    if (d.getEmail().equals(email)) {
                         emailCorrect = true;
-                        //Obtener los datos del usuario
+                        // Obtener los datos del usuario
                         doctorLogged = d;
                         UIDoctorMenu.ShowDoctorMenu();
                     }
                 }
 
             }
-            if (userType==2){
-                for (Patient p: patients) {
-                    if (p.getEmail().equals(email)){
+            if (userType == 2) {
+                for (Patient p : patients) {
+                    if (p.getEmail().equals(email)) {
                         emailCorrect = true;
-                        //Obtener los datos del usuario
+                        // Obtener los datos del usuario
                         patientLogged = p;
-                        //ShowPatientMenu();
+                        // ShowPatientMenu();
                     }
                 }
             }
-        }while (!emailCorrect);
+        } while (!emailCorrect);
     }
 }
-
