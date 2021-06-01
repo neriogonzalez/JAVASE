@@ -33,7 +33,7 @@ public class UIMenu {
                     break;
                 case 2:
                     response = 0;
-                    System.out.println("Doctor");
+                    System.out.println("Patient");
                     authUser(2);
                     break;
                 case 0:
@@ -81,12 +81,12 @@ public class UIMenu {
         // UserType = 2 Patient
 
         ArrayList<Doctor> doctors = new ArrayList<>();
-        doctors.add(new Doctor("Doctor 1", "doctor1@gmail.com"));
+        doctors.add(new Doctor("Nerio González", "Nerio@gmail.com"));
         doctors.add(new Doctor("Doctor 2", "doctor2@gmail.com"));
         doctors.add(new Doctor("Doctor 3", "doctor3@gmail.com"));
 
         ArrayList<Patient> patients = new ArrayList<>();
-        patients.add(new Patient("Paciente 1", "pciente1@gmail.com"));
+        patients.add(new Patient("Desiree Larrea", "Desiree@gmail.com"));
         patients.add(new Patient("Paciente 2", "pciente2@gmail.com"));
         patients.add(new Patient("Paciente 3", "pciente3@gmail.com"));
 
@@ -113,7 +113,7 @@ public class UIMenu {
                         emailCorrect = true;
                         // Obtener los datos del usuario
                         patientLogged = p;
-                        // ShowPatientMenu();
+                         UIPatientMenu.showPatientMenu();
                     }
                 }
             }
